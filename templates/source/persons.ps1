@@ -41,7 +41,7 @@ function Invoke-{connectorName}RestMethod {
     }
 }
 
-function Resolve-{connectorName}NameError {
+function Resolve-{connectorName}Error {
     [CmdletBinding()]
     param (
         [Parameter(Mandatory)]
