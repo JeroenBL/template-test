@@ -1,7 +1,7 @@
 # HelloID-Conn-Prov-Source-{connectorName}
 
 <p align="center">
-  <img src="assets/logo.png">
+  <img src="https://raw.githubusercontent.com/JeroenBL/template-test/main/templates/shared/logo.png">
 </p>
 
 | :warning: Warning |
