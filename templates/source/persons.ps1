@@ -127,7 +127,7 @@ try {
     $ex = $PSItem
     if ($($ex.Exception.GetType().FullName -eq 'Microsoft.PowerShell.Commands.HttpResponseException') -or
         $($ex.Exception.GetType().FullName -eq 'System.Net.WebException')) {
-        $errorObj = Resolve-$($Name)Error -ErrorObject $ex
+        $errorObj = Resolve-{connectorName}Error -ErrorObject $ex
         Write-Verbose "Could not import {connectorName} persons. Error at Line '$($errorObj.ScriptLineNumber)': $($errorObj.Line). Error: $($errorObj.ErrorDetails)"
         Write-Error "Could not import {connectorName} persons. Error: $($errorObj.FriendlyMessage)"
     } else {
